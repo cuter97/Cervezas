@@ -1,0 +1,77 @@
+/* SECCION CERVEZAS */
+
+/* SUBMENU */
+.blanco{
+    position: sticky;
+    top: 0;
+    z-index: 1999;
+    padding-top: 0%;
+    /* para que me quede transparente poque bootstrap lo cambia
+    porque lo tiene como prioridad le agregue un important*/
+    background-color:transparent !important;
+
+    .pegajoso{
+        font-family: 'Staatliches', cursive;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: nth($colores-cervezas , 1 );
+        margin: 0px auto;
+        padding: 10px;
+        @include radioBottom(40px,40px);
+      }
+  }
+
+/*tuve que cancelar propiedades de bootstrap para que quede como quiero*/
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+.contenedor-cervezas {
+    list-style: none;
+    li{
+        a{
+            &:hover{
+                color: nth($colores-cervezas , 2 );
+                transition: all .2s;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+.contenedor-cervezas > {
+    li > {
+        a{
+            color: nth($colores-cervezas , 3 );
+            text-decoration: none;
+        }
+    }
+}
+ .card-title{
+     text-align: center;
+     font-size: 30px;
+     color: rgb(1, 78, 1);
+ }
+ .cervezas__titulo{
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+ }
+ .card-text{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 21px;
+ }
+
+ .card{
+     background-color: rgb(241, 241, 229);
+ }
+ @media screen and (min-width: 0px) and (max-width: 768px){
+     .col-md-4{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-top: 20px;
+     }
+ }

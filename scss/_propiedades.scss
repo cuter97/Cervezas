@@ -1,0 +1,56 @@
+%propiedades{
+    display: flex;
+    justify-content: center;
+}
+%propiedades-2{
+    display: flex;
+    align-items: center;
+}
+%propiedades-3{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+%decoration-none{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+$colores-header:
+    #999,
+    rgb(59,14,14),
+    #7B2311,
+    #f0edec,
+    #161515,
+    #fff,
+    #d16200,
+    rgb(36, 32, 32),
+    #221e1e;
+
+$colores-footer:
+    #A51E1E,    
+    #161515,
+    black;
+
+$colores-cervezas:
+    #e0bc78,
+    #d16200,
+    #fff;
+
+$colores-contacto:
+    rgb(250, 223, 199),
+    #f0ecec,
+    white,
+    #e74c3c,
+    #638cb5;
+
+@mixin dimensiones($height,$widht) {
+    height: $height;
+    width: $widht;
+} 
+
+@mixin radioBottom($bottomLeft,$bottomRigth) {
+    border-bottom-left-radius:$bottomLeft;
+    border-bottom-right-radius: $bottomRigth;
+} 

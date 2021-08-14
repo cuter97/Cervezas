@@ -1,0 +1,51 @@
+
+.nosotros__flex{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px;
+    margin: 20px 200px;
+    padding: 70px;
+    align-items: center;
+    
+    .nosotros__titulo{
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-size: 40px;
+        padding: 50px;
+    }
+    
+    .nosotros__contenido{
+        font-family: 'Patrick Hand', cursive;
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 60px;
+        line-height: 40px;
+        width: 60%;
+    }
+    img{
+        @include dimensiones(400px,400px)
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 960px){
+        
+        box-shadow: 0px;
+        margin: 0%;
+        padding: 0%;;
+        img{
+            height: 300px;
+            width: 300px;
+            padding: 50px;
+        }
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 480px){
+        box-shadow: 0px;
+        margin: 0%;
+        padding: 0%;;
+        img{
+            height: 300px;
+            width: 300px;
+            padding: 50px;
+        }
+    }
+}

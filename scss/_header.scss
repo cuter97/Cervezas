@@ -56,7 +56,8 @@
         80% { top: -110px; } 
     }
     
-    @media screen and (min-width: 0px) and (max-width: 480px) {
+    /*header adaptado a celular*/
+    @include size(phone) {
         display: grid;
         align-items: center;
         font-size: 35px;
@@ -83,8 +84,8 @@
             display: none;
         }
     }
-
-    @media screen and (min-width: 481px) and (max-width: 1030px){
+    /*hader adaptado a tablet*/
+    @include size(tablet) {
         display: flex;
         font-size: 35px;
         color: #fff;
@@ -127,7 +128,7 @@
     }
 
     /*menu adaptado a tablet*/
-    @media screen and (min-width: 481px) and (max-width: 1030px) {
+    @include size(tablet) {
         margin: auto;
         width: 50%; 
         border-top-left-radius: 0px;
@@ -193,7 +194,7 @@
     }
 
     /*menu adaptado a celular*/
-    @media screen and (min-width: 0px) and (max-width: 480px) {
+    @include size (phone) {
         width: 100%; 
         border-radius:0;
         display: flex;

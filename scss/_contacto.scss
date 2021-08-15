@@ -1,3 +1,4 @@
+/*seccion contacto*/
 .contenedorContacto{
     display: grid;
     grid-template-rows: repeat(auto-fill, 1fr);
@@ -92,10 +93,9 @@
         }
     }
 
-    @media screen and (min-width: 481px) and (max-width: 960px) {
+    /*query adaptao a tablet*/
+    @include size (tablet) {
         grid-template-columns: 100%;
-        grid-template-rows: repeat(auto-fill, 1fr);
-        row-gap: 10px; /* espacio entre filas */
         grid-template-areas: unset;
 
         #marcasLink{
@@ -111,9 +111,8 @@
         }
     }
 
-    @media screen and (min-width: 0px) and (max-width: 480px) {
-        display: grid;
-        grid-template-rows: repeat(auto-fill, 1fr);
+    /*query adaptado a celular*/
+    @include size(phone) {
         grid-template-columns: 100%;
         grid-template-areas:unset;
 
@@ -126,7 +125,7 @@
             margin: 20px 0px;
 
             #texto, .tamInput{
-                width: 300px;
+                width: 200px;
             }
         }
     }

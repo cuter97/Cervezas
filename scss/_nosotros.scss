@@ -1,11 +1,11 @@
-
+/*seccion nosotros*/
 .nosotros__flex{
     display: flex;
-    flex-direction: column;
+    @include display( column,center);
     box-shadow: 0px 0px 10px;
     margin: 20px 200px;
     padding: 70px;
-    align-items: center;
+
     
     .nosotros__titulo{
         text-align: center;
@@ -25,26 +25,25 @@
     img{
         @include dimensiones(400px,400px)
     }
-
-    @media screen and (min-width: 481px) and (max-width: 960px){
+    /*query seccion nosotros tablet*/
+    @include size(tablet){
         
         box-shadow: 0px;
         margin: 0%;
         padding: 0%;;
         img{
-            height: 300px;
-            width: 300px;
+            @include dimensiones(300px,300px);
             padding: 50px;
         }
     }
-
-    @media screen and (min-width: 0px) and (max-width: 480px){
+    
+    /*query seccion nosotros cellular*/
+    @include size(phone) {
         box-shadow: 0px;
         margin: 0%;
         padding: 0%;;
         img{
-            height: 300px;
-            width: 300px;
+            @include dimensiones(300px,300px);
             padding: 50px;
         }
     }

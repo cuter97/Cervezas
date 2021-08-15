@@ -26,7 +26,9 @@
   height: 100px;
   font-family: 'Staatliches', cursive;
   font-size: 40px;
-  color: #999; }
+  color: #999;
+  /*header adaptado a celular*/
+  /*hader adaptado a tablet*/ }
   .Iam div {
     display: none; }
   .Iam p {
@@ -253,13 +255,14 @@ footer {
 
 .contenedor {
   display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "columna1 columna2 columna3";
   column-gap: 10px;
   /* COLUMNA 1 */
   /* COLUMNA2 */
-  /* COLUMNA3 */ }
+  /* COLUMNA3 */
+  /*footer adaptado a tablet*/
+  /*footer adaptado a celular*/ }
   .contenedor .imagen_logos_redes {
     margin: 10px 40px; }
     .contenedor .imagen_logos_redes a {
@@ -279,10 +282,9 @@ footer {
     width: 190px;
     border-radius: 1000px;
     border: 2px solid black; }
-  @media screen and (min-width: 481px) and (max-width: 960px) {
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
     .contenedor {
       grid-template-columns: 100%;
-      grid-template-rows: repeat(auto-fill, 1fr);
       row-gap: 10px;
       /* espacio entre filas */
       grid-template-areas: unset; } }
@@ -290,7 +292,6 @@ footer {
     .contenedor {
       background-color: #b2bb35;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(auto-fill, 1fr);
       row-gap: 10px;
       /* espacio entre filas */
       grid-template-areas: unset; }
@@ -328,6 +329,7 @@ footer {
 .carousel-item {
   height: 85vh; }
 
+/*seccion historia y bares*/
 /* margin aplicado con bootstrap */
 .h1-bares {
   text-transform: uppercase;
@@ -363,8 +365,8 @@ footer {
   display: flex;
   margin-bottom: 50px;
   /*query adaptado a tablet*/
-  /*query adaptado a tablet*/ }
-  @media screen and (min-width: 481px) and (max-width: 960px) {
+  /*query adaptado a celular*/ }
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
     .bares-flex {
       flex-direction: column;
       align-items: center; }
@@ -375,24 +377,28 @@ footer {
       flex-direction: column;
       align-items: center; }
       .bares-flex .bares__contenido--1 {
-        margin-right: 0px; } }
+        margin-right: 0px;
+        font-size: small; } }
 
 .bares-flex-2 {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 50px; }
-  @media screen and (min-width: 481px) and (max-width: 960px) {
+  margin-bottom: 50px;
+  /*query adaptado a tablet*/
+  /*query adaptado a celular*/ }
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
     .bares-flex-2 {
       flex-direction: column;
       align-items: center; }
       .bares-flex-2 .bares__contenido--2 {
         margin-left: 0px; } }
-  @media screen and (min-width: 0px) and (max-width: 481px) {
+  @media screen and (min-width: 0px) and (max-width: 480px) {
     .bares-flex-2 {
       flex-direction: column;
       align-items: center; }
       .bares-flex-2 .bares__contenido--2 {
-        margin-left: 0px; } }
+        margin-left: 0px;
+        font-size: small; } }
 
 .bares__contenido--1 {
   margin-right: 50px;
@@ -458,18 +464,24 @@ footer {
 .card {
   background-color: #f1f1e5; }
 
+/*seccion cervezas adaptada a celular*/
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .col-md-4 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 20px; } }
+    justify-content: center;
+    padding-top: 20px; }
+  .card-text {
+    font-size: 20px; } }
 
+/*seccion contacto*/
 .contenedorContacto {
   display: grid;
   grid-template-rows: repeat(auto-fill, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "marcas contacto contacto" "marcas contacto contacto" "marcas contacto contacto"; }
+  grid-template-areas: "marcas contacto contacto" "marcas contacto contacto" "marcas contacto contacto";
+  /*query adaptao a tablet*/
+  /*query adaptado a celular*/ }
   .contenedorContacto #marcasLink {
     grid-area: marcas; }
     .contenedorContacto #marcasLink #contactosMarcas {
@@ -529,12 +541,9 @@ footer {
         border: 5px solid #e74c3c;
         color: white;
         cursor: pointer; }
-  @media screen and (min-width: 481px) and (max-width: 960px) {
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
     .contenedorContacto {
       grid-template-columns: 100%;
-      grid-template-rows: repeat(auto-fill, 1fr);
-      row-gap: 10px;
-      /* espacio entre filas */
       grid-template-areas: unset; }
       .contenedorContacto #marcasLink {
         grid-area: unset; }
@@ -545,8 +554,6 @@ footer {
           width: 300px; } }
   @media screen and (min-width: 0px) and (max-width: 480px) {
     .contenedorContacto {
-      display: grid;
-      grid-template-rows: repeat(auto-fill, 1fr);
       grid-template-columns: 100%;
       grid-template-areas: unset; }
       .contenedorContacto #marcasLink {
@@ -555,15 +562,18 @@ footer {
         grid-area: unset;
         margin: 20px 0px; }
         .contenedorContacto #mensajeMail #texto, .contenedorContacto #mensajeMail .tamInput {
-          width: 300px; } }
+          width: 200px; } }
 
+/*seccion nosotros*/
 .nosotros__flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-shadow: 0px 0px 10px;
   margin: 20px 200px;
   padding: 70px;
-  align-items: center; }
+  /*query seccion nosotros tablet*/
+  /*query seccion nosotros cellular*/ }
   .nosotros__flex .nosotros__titulo {
     text-align: center;
     font-family: 'Staatliches', cursive;
@@ -579,7 +589,7 @@ footer {
   .nosotros__flex img {
     height: 400px;
     width: 400px; }
-  @media screen and (min-width: 481px) and (max-width: 960px) {
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
     .nosotros__flex {
       box-shadow: 0px;
       margin: 0%;

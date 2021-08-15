@@ -1,3 +1,4 @@
+/*seccion historia y bares*/
 /* margin aplicado con bootstrap */
 .h1-bares{
     text-transform: uppercase;
@@ -33,21 +34,22 @@
     margin-bottom: 50px;
 
     /*query adaptado a tablet*/
-    @media screen and (min-width: 481px) and (max-width: 960px) {
-      flex-direction: column;
-      align-items: center;
+    @include size(tablet){
+      @include display($flex-direction:column,$align:center);
       .bares__contenido--1{
         margin-right: 0px;
       }
     }
-    /*query adaptado a tablet*/
-    @media screen and (min-width: 0px) and (max-width: 480px) {
-      flex-direction: column;
-      align-items: center;
+
+    /*query adaptado a celular*/
+    @include size (phone){
+      @include display($flex-direction:column,$align:center);
       .bares__contenido--1{
         margin-right: 0px;
+        font-size: small;
       }
     }
+
   }
 
 
@@ -56,19 +58,20 @@
     flex-direction: row-reverse;
     margin-bottom: 50px;
 
-    @media screen and (min-width: 481px) and (max-width: 960px) {
-      flex-direction: column;
-      align-items: center;
+    /*query adaptado a tablet*/
+    @include size (tablet) {
+      @include display($flex-direction:column,$align:center);
       .bares__contenido--2{
         margin-left: 0px;
       }
     }
-
-    @media screen and (min-width: 0px) and (max-width: 481px) {
-      flex-direction: column;
-      align-items: center;
+    
+    /*query adaptado a celular*/
+    @include size (phone) {
+      @include display($flex-direction:column,$align:center);
       .bares__contenido--2{
         margin-left: 0px;
+        font-size: small;
       }
     }
   }

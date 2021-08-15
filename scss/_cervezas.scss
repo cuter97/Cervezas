@@ -50,28 +50,31 @@
         }
     }
 }
- .card-title{
+
+.card-title{
      text-align: center;
      font-size: 30px;
      color: rgb(1, 78, 1);
- }
- .cervezas__titulo{
+}
+.cervezas__titulo{
     font-family: 'Staatliches', cursive;
     font-size: 40px;
- }
- .card-text{
+}
+.card-text{
     font-family: 'Patrick Hand', cursive;
     font-size: 21px;
- }
-
- .card{
+}
+.card{
      background-color: rgb(241, 241, 229);
- }
- @media screen and (min-width: 0px) and (max-width: 768px){
-     .col-md-4{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding-top: 20px;
-     }
- }
+}
+
+/*seccion cervezas adaptada a celular*/
+@include size(otro){
+    .col-md-4{
+        @include display-2(flex,center,center);
+        padding-top: 20px;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+}

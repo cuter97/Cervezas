@@ -1,0 +1,33 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    .error404{
+        font-size: 100px;
+        position: relative;
+    }
+    p{
+        font-size: 30px; 
+    }
+    img{
+        @include dimensiones(80px,80px);
+        position:absolute;
+        top: 120px;
+    }
+
+    button{
+        padding: 10px;
+        margin-top: 20px;
+        &:hover{
+            background-color: nth($colores-contacto , 4 );
+        }
+        a{
+            color: black;
+            @extend %decoration-none;
+            font-size: 20px;
+        }
+    }
+
+}

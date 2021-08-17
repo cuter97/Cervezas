@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center; }
 
-.contenedor .imagen_logos_redes a {
+.contenedor .imagen_logos_redes a, .error button a {
   list-style: none;
   text-decoration: none; }
 
@@ -269,13 +269,15 @@ footer {
       margin-left: 10px;
       font-family: 'Staatliches', cursive;
       color: #161515;
-      font-size: 30px; }
+      font-size: 20px; }
+      .contenedor .imagen_logos_redes a:hover {
+        color: #a4af04; }
   .contenedor .imagen-logo-mail {
     margin: 10px 40px; }
     .contenedor .imagen-logo-mail .correo {
       margin-left: 10px;
       font-family: 'Nanum Gothic', sans-serif;
-      font-size: 20px; }
+      font-size: 15px; }
   .contenedor .columna_3 .logo__footer {
     /*tamaño logo*/
     height: 190px;
@@ -607,3 +609,28 @@ footer {
         height: 300px;
         width: 300px;
         padding: 50px; } }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px; }
+  .error .error404 {
+    font-size: 100px;
+    position: relative; }
+  .error p {
+    font-size: 30px; }
+  .error img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 120px; }
+  .error button {
+    padding: 10px;
+    margin-top: 20px; }
+    .error button:hover {
+      background-color: #e74c3c; }
+    .error button a {
+      color: black;
+      font-size: 20px; }

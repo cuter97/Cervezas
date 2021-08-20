@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cervezas, bariloche, patagonia, artesanal, locales, bares, blest, manush, berlina, beer,
-    montaña, cerveza artesanal, india pale ale, historia, lager, stout, golden beer, red beer, ipa beer">
-    <meta name="description" content="en esta página encontraras las mejores cervezas de la Patagonia Argentina, estas cervecerías se encuentran en la ciudad de San Carlos de Bariloche donde cada marca que te mostramos elabora cerveza de manera artesanal. En esta página te brindamos información de las cervezas más populares hasta la fecha, como están echas y las proporciones de IBU y volumen alcohólico. Además, tenemos una sección en donde te contamos un poco de historia de los orígenes de cada cervecería. Esta es una página de aficionados de la birra que recorren cada bar de la ciudad degustando las mejores cervezas y conociendo nuevos tipos de birra">
+    <meta name="keywords" content="cervezas, bariloche, patagonia, bares, blest, manush, berlina, cerveza artesanal, lager, stout, golden beer, red beer, ipa beer">
+    <meta name="description" content="en esta página web encontraras las mejores cervezas de la Patagonia Argentina, estas cervecerías se encuentran en la ciudad de San Carlos de Bariloche donde cada marca elabora cerveza de manera artesanal. En esta página te brindamos información de las cervezas más populares hasta la fecha y como están elaboradas. Además, te contamos un poco de historia de los orígenes de cada cervecería.">
     <meta name="author" content="Agustin Castets">
     <link rel="shortcut icon" type="image/png" href="Imagenes/cerveza-icono.png">
     <!-- link bootstrap -->
@@ -16,42 +15,52 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Cervezas Bariloche - HOPS Patagonia</title>
 </head>
+
 <body>
+    
     <header class="fondoContacto">
+
         <div class="Iam">
+
             <p>cervezas bariloche</p>
             <div class="query__contacto">
                 <img src="Imagenes/cerveza-icono.png" alt="cerveza">
             </div>
+
             <b>
                 <div class="innerIam">
                     las mejores birras<br>
                     las mejores cervecerias<br>
                 </div>
             </b>
+
         </div>
+
         <!-- clase container de bootstrap aplicada para volver responsive el nav -->
         <nav class="navegacion container">
+
             <div>
-                <a href="error404.html"><img src="Imagenes/cerveza-icono.png" alt="cerveza"></a>
+                <a href="index.html"><img src="Imagenes/cerveza-icono.png" alt="cerveza"></a>
             </div>
+
             <ul class="menu">
+
                 <li><a href="index.html">INICIO</a></li>
-                <li><a href="bares.html">HISTORIA Y BARES</a></li>
+                <li><a href="secciones/bares.html">HISTORIA Y BARES</a></li>
 
                 <!-- menu desplegable -->
                 <li>
-                    <a href="cervezas.html">CERVEZAS</a>
+                    <a href="secciones/cervezas.html">CERVEZAS</a>
                     <ul class="submenu">
-                        <li><a href="cervezas.html#BLEST">BLEST</a></li>
-                        <li><a href="cervezas.html#MANUSH">MANUSH</a></li>
-                        <li><a href="cervezas.html#PATAGONIA">PATAGONIA</a></li>
-                        <li><a href="cervezas.html#BERLINA">BERLINA</a></li>
+                        <li><a href="secciones/cervezas.html#BLEST">BLEST</a></li>
+                        <li><a href="secciones/cervezas.html#MANUSH">MANUSH</a></li>
+                        <li><a href="secciones/cervezas.html#PATAGONIA">PATAGONIA</a></li>
+                        <li><a href="secciones/cervezas.html#BERLINA">BERLINA</a></li>
                     </ul>
                 </li>
 
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="secciones/nosotros.html">NOSOTROS</a></li>
+                <li><a href="secciones/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -59,6 +68,7 @@
     <!-- carrusel de imagenes -->
     
         <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+
             <div class="carousel-inner">
               <div class="carousel-item active fondo1">
                 <img src="Imagenes/carrusel2.jpg" class="d-block w-100" alt="bar-patagonia">
@@ -70,10 +80,12 @@
                 <img src="Imagenes/carrusel3.jpg" class="d-block w-100" alt="paisaje-patagonia">
               </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
@@ -84,6 +96,7 @@
     <!-- logos de las marcas que mostramos  -->
     <section>
         <h1 class="h1-section-index">Cervecerias</h1>
+
         <div class="logos-cervecerias">
             <a href="https://cervezablest.com.ar/" target="_blank"><img src="Imagenes/blest.png" alt="Logo_Blest" class="img-logos-blest"></a>
             <a href="https://cervezamanush.com.ar/" target="_blank"><img src="Imagenes/manush.png" alt="Logo_Manush" class="img-logos-manush"></a>

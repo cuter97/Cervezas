@@ -56,7 +56,7 @@
         80% { top: -110px; } 
     }
     
-    /*header adaptado a celular*/
+    // /*header adaptado a celular*/
     @include size(phone) {
         display: grid;
         align-items: center;

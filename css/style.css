@@ -27,7 +27,6 @@
   font-family: 'Staatliches', cursive;
   font-size: 40px;
   color: #999;
-  /*header adaptado a celular*/
   /*hader adaptado a tablet*/ }
   .Iam div {
     display: none; }
@@ -317,7 +316,7 @@ footer {
     height: 231.25px;
     width: 231.25px; }
 
-.h3-section-index {
+.h1-section-index {
   text-transform: uppercase;
   font-family: 'Staatliches', cursive;
   font-size: 30px;

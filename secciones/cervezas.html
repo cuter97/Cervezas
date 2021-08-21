@@ -17,38 +17,63 @@
 
 <body>
   
-    <header class="fondoContacto">
-        <div class="Iam">
+  <header class="fondoContacto">
+      <div class="Iam">
 
-          <p>cervezas bariloche</p>
+        <p>cervezas bariloche</p>
 
-          <div class="query__contacto">
-              <img src="../Imagenes/cerveza-icono.png" alt="cerveza">
-          </div>
-
-            <b>
-                <div class="innerIam">
-                    las mejores birras<br>
-                    las mejores cervecerias<br>
-                </div>
-            </b>
+        <div class="query__contacto">
+            <img src="../Imagenes/cerveza-icono.png" alt="cerveza">
         </div>
 
-        <nav class="navegacion container">
+          <b>
+              <div class="innerIam">
+                  las mejores birras<br>
+                  las mejores cervecerias<br>
+              </div>
+          </b>
+      </div>
 
-          <div>
-            <a href="../index.html"><img src="../Imagenes/cerveza-icono.png" alt="cerveza"></a>
-          </div>
+  </header>
+
+  <!-- menu de navegacion con bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid justify-content-start ">
         
-            <ul class="menu">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="bares.html">HISTORIA Y BARES</a></li>
-                <li><a href="cervezas.html">CERVEZAS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+        <a class="navbar-brand img-header" href="../index.html">
+            <img src="../Imagenes/cerveza-icono.png" alt="cerveza" width="40" height="40">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link color-header active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-header" href="bares.html"> Historia y Bares</a>
+                </li>
+                
+                <!-- SUBMENU -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link color-header" href="cervezas.html">Cervezas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link color-header" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-header" href="contacto.html">Contacto</a>
+                </li>
+
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+  </nav>
 
 
     <!-- BOOTSTRAP APLICADO -->

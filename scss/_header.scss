@@ -106,239 +106,60 @@
     }
 }
 
+
+
 // MENU DE NAVEGACION
-.navegacion{
-   // width: 1200px;
-    //margin: 0px auto;
-    background: nth($colores-header, 5);
-    text-align: center;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    img{
-      @include dimensiones(40px,40px); 
-    }
-    
-    ul{
-        list-style: none;
-        padding: 0px;
-        margin-bottom: 0px;
-    }
-
-    /*menu adaptado a tablet*/
-    @include size(tablet) {
-        margin: auto;
-        width: 50%; 
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        background-color: #2b2222ee;
-        
-        img{
-            display: none;
-        }
-
-        .menu{
-            li{
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    padding: 15px 65px;
-                    display: block;
-                    width: 200px;
-                    text-align: center; 
-                    
-                    &:hover{
-                        color: #d16200;
-                        transition: all .2s;
-                        background-color: rgb(36, 32, 32);
-                    }
-                }
-            }
-        }
-
-        .submenu{
-            display: flex;
-            flex-direction: column;
-            background: #070707;
-            width: 100%;
-            visibility: hidden;
-            opacity: 0;
-            text-align: center;
-            justify-content: center; 
-        }
-
-        .submenu > {
-            li > {
-                a{
-                    padding: 15px;
-                    color: #fff;
-                    font-family: 'Open sans';
-                    text-decoration: none; 
-                }
-            }
-        }
-
-        .menu{
-            li{
-                &:hover{
-                    .submenu{
-                        visibility: visible;
-                        opacity: 1;
-                        position: relative;
-                    }
-                }
-            }
-        }
-    }
-
-    /*menu adaptado a celular*/
-    @include size (phone) {
-        width: 100%; 
-        border-radius:0;
-        display: flex;
-        justify-content: center;
-        
-        
-        img{
-            display: none;
-        }
-
-        ul {
-            list-style: none; 
-        }
-
-        .menu > {
-            li{
-                position: relative;
-                display: block;
-                text-align: center; 
-            }
-        }
-
-        .menu > {
-            li > {
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    display: block;  
-                }
-            }
-        }
-
-        .menu{
-            li{
-                a{
-                    &:hover{
-                        color: #d16200;
-                        transition: all .2s;
-                        background-color: rgb(36, 32, 32);
-                    }
-                }
-            }
-        }
-
-        .submenu{
-            display: flex;
-            flex-direction: column;
-            background: #221e1e;
-            width: 100%;
-            visibility: hidden;
-            opacity: 0;
-            justify-content: center;
-        }
-
-        .submenu > {
-            li > {
-                a{
-                    padding: 15px;
-                    color: #fff;
-                    font-family: 'Open sans';
-                    text-decoration: none; 
-                }
-            }
-        }
-
-        .menu{
-            li{
-                a{
-                    &:hover{
-                        .submenu{
-                            visibility: visible;
-                            position: relative;
-                             opacity: 1;
-                        }
-                    }
-                }
-            }
-        }
-    }
+.color-header{
+    margin: 0px 20px;
+    font-size: 17px;
 }
-.menu > {
+.img-header{
+    margin: 0px 20px;
+}
 
-    li{
-        position: relative;
-        display: inline-block;  
-    }
 
-    li > {
-        a{
-            display: block;
-            padding: 15px 50px;
-            color: nth($colores-header, 6 );
+.submenu {
+    li {
+        a {
             font-family: 'Open sans';
-            text-decoration: none;
-        }
-    }
-}
-
-.menu{
-    li{
-        a{
+            font-size: 20px;
             &:hover{
-                color: nth($colores-header, 7 );
-                transition: all .2s;
-                background-color: nth($colores-header, 8 );
-                border-radius: 30px;
+                transition: padding .2s;
+                padding-left: 30px;
+                color: #d16200;
+                background-color: rgb(107, 107, 107);
             }
         }
     }
 }
 
-/* SUBMENU*/
-.submenu{
-    position: absolute;
-    background: nth($colores-header, 9 );
-    padding: 0px;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .4s;
-    @include radioBottom(20px,20px);
-    z-index: 1999;
-    
-    li{
-        a{
+.navbar{
+
+    .dropdown-menu{
+        background-color: #212529;
+        display: block;
+        height: 0px;
+        padding: 0;
+        border: 0;
+        transition: all .2s;
+        .dropdown-item{
+            display: none;
+        }
+        &.show{
+            overflow: hidden;
+            .dropdown-item{
+                display: block;
+                transition: all .25s;
+                &:hover{
+                    background-color: #dcdbdf;
+                }
+            }
+
+            box-shadow: 0 30px 30px 0 rgba(0,0,0,.3);
+            background: rgba(255,255,255,.92);
             display: block;
-            padding: 15px;
-            color: nth($colores-header, 6 );
-            font-family: 'Open sans';
-            text-decoration: none; 
+            height: 40px*4; 
+            
         }
     }
-}
-
-.menu{
-    li{
-        &:hover{  
-            .submenu{
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-    }
-}
-.fondoContacto{
-    background: nth($colores-header, 3 );
 }

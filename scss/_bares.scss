@@ -46,7 +46,7 @@
       @include display($flex-direction:column,$align:center);
       .bares__contenido--1{
         margin-right: 0px;
-        font-size: small;
+        font-size: 23px;
       }
     }
 
@@ -78,13 +78,13 @@
   .bares__contenido--1{
     @extend %propiedades-3;
     margin-right: 50px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand italica', cursive;
     font-size: 21px;
   }
   .bares__contenido--2{
     @extend %propiedades-3;
     margin-left: 50px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand italica', cursive;
     font-size: 21px;
   }
  

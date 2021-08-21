@@ -28,6 +28,12 @@
     .img-logos-patagonia{
         @include dimensiones(231.25px,231.25px);
     }
+    @include size(tablet){
+        flex-direction: column;
+    }
+    @include size(phone){
+        flex-direction: column;
+    }
 }
 .h1-section-index{
     text-transform: uppercase;
@@ -46,7 +52,7 @@
      }
  }
 .carousel-item{
-    height: 95vh;
+    height: 80vh;
 }
 
 

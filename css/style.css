@@ -105,142 +105,42 @@
       .Iam .innerIam {
         display: none; } }
 
-.navegacion {
-  background: #161515;
-  text-align: center;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /*menu adaptado a tablet*/
-  /*menu adaptado a celular*/ }
-  .navegacion img {
-    height: 40px;
-    width: 40px; }
-  .navegacion ul {
-    list-style: none;
-    padding: 0px;
-    margin-bottom: 0px; }
-  @media screen and (min-width: 481px) and (max-width: 1030px) {
-    .navegacion {
-      margin: auto;
-      width: 50%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      background-color: #2b2222ee; }
-      .navegacion img {
-        display: none; }
-      .navegacion .menu li a {
-        color: #fff;
-        text-decoration: none;
-        padding: 15px 65px;
-        display: block;
-        width: 200px;
-        text-align: center; }
-        .navegacion .menu li a:hover {
-          color: #d16200;
-          transition: all .2s;
-          background-color: #242020; }
-      .navegacion .submenu {
-        display: flex;
-        flex-direction: column;
-        background: #070707;
-        width: 100%;
-        visibility: hidden;
-        opacity: 0;
-        text-align: center;
-        justify-content: center; }
-      .navegacion .submenu > li > a {
-        padding: 15px;
-        color: #fff;
-        font-family: 'Open sans';
-        text-decoration: none; }
-      .navegacion .menu li:hover .submenu {
-        visibility: visible;
-        opacity: 1;
-        position: relative; } }
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    .navegacion {
-      width: 100%;
-      border-radius: 0;
-      display: flex;
-      justify-content: center; }
-      .navegacion img {
-        display: none; }
-      .navegacion ul {
-        list-style: none; }
-      .navegacion .menu > li {
-        position: relative;
-        display: block;
-        text-align: center; }
-      .navegacion .menu > li > a {
-        color: #fff;
-        text-decoration: none;
-        display: block; }
-      .navegacion .menu li a:hover {
-        color: #d16200;
-        transition: all .2s;
-        background-color: #242020; }
-      .navegacion .submenu {
-        display: flex;
-        flex-direction: column;
-        background: #221e1e;
-        width: 100%;
-        visibility: hidden;
-        opacity: 0;
-        justify-content: center; }
-      .navegacion .submenu > li > a {
-        padding: 15px;
-        color: #fff;
-        font-family: 'Open sans';
-        text-decoration: none; }
-      .navegacion .menu li a:hover .submenu {
-        visibility: visible;
-        position: relative;
-        opacity: 1; } }
+.color-header {
+  margin: 0px 20px;
+  font-size: 17px; }
 
-.menu > li {
-  position: relative;
-  display: inline-block; }
+.img-header {
+  margin: 0px 20px; }
 
-.menu > li > a {
-  display: block;
-  padding: 15px 50px;
-  color: #fff;
+.submenu li a {
   font-family: 'Open sans';
-  text-decoration: none; }
+  font-size: 20px; }
+  .submenu li a:hover {
+    transition: padding .2s;
+    padding-left: 30px;
+    color: #d16200;
+    background-color: #6b6b6b; }
 
-.menu li a:hover {
-  color: #d16200;
-  transition: all .2s;
-  background-color: #242020;
-  border-radius: 30px; }
-
-/* SUBMENU*/
-.submenu {
-  position: absolute;
-  background: #221e1e;
-  padding: 0px;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .4s;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  z-index: 1999; }
-  .submenu li a {
+.navbar .dropdown-menu {
+  background-color: #212529;
+  display: block;
+  height: 0px;
+  padding: 0;
+  border: 0;
+  transition: all .2s; }
+  .navbar .dropdown-menu .dropdown-item {
+    display: none; }
+  .navbar .dropdown-menu.show {
+    overflow: hidden;
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.92);
     display: block;
-    padding: 15px;
-    color: #fff;
-    font-family: 'Open sans';
-    text-decoration: none; }
-
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
-
-.fondoContacto {
-  background: #7B2311; }
+    height: 160px; }
+    .navbar .dropdown-menu.show .dropdown-item {
+      display: block;
+      transition: all .25s; }
+      .navbar .dropdown-menu.show .dropdown-item:hover {
+        background-color: #dcdbdf; }
 
 footer {
   background: #A51E1E;
@@ -315,6 +215,12 @@ footer {
   .logos-cervecerias .img-logos-patagonia {
     height: 231.25px;
     width: 231.25px; }
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
+    .logos-cervecerias {
+      flex-direction: column; } }
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    .logos-cervecerias {
+      flex-direction: column; } }
 
 .h1-section-index {
   text-transform: uppercase;
@@ -328,7 +234,7 @@ footer {
   object-fit: cover; }
 
 .carousel-item {
-  height: 95vh; }
+  height: 80vh; }
 
 /*seccion historia y bares*/
 /* margin aplicado con bootstrap */
@@ -379,7 +285,7 @@ footer {
       align-items: center; }
       .bares-flex .bares__contenido--1 {
         margin-right: 0px;
-        font-size: small; } }
+        font-size: 23px; } }
 
 .bares-flex-2 {
   display: flex;
@@ -403,19 +309,19 @@ footer {
 
 .bares__contenido--1 {
   margin-right: 50px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand italica', cursive;
   font-size: 21px; }
 
 .bares__contenido--2 {
   margin-left: 50px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand italica', cursive;
   font-size: 21px; }
 
 /* SECCION CERVEZAS */
 /* SUBMENU */
 .blanco {
   position: sticky;
-  top: 0;
+  top: 66px;
   z-index: 1999;
   padding-top: 0%;
   /* para que me quede transparente poque bootstrap lo cambia
@@ -459,8 +365,8 @@ footer {
   font-size: 40px; }
 
 .card-text {
-  font-family: 'Patrick Hand', cursive;
-  font-size: 21px; }
+  font-family: 'Patrick Hand bold', cursive;
+  font-size: 18px; }
 
 .card {
   background-color: #f1f1e5; }
@@ -581,7 +487,7 @@ footer {
     font-size: 40px;
     padding: 50px; }
   .nosotros__flex .nosotros__contenido {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand bold', cursive;
     font-size: 21px;
     text-align: center;
     padding-bottom: 60px;

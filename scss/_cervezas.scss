@@ -3,7 +3,7 @@
 /* SUBMENU */
 .blanco{
     position: sticky;
-    top: 0;
+    top: 66px;
     z-index: 1999;
     padding-top: 0%;
     /* para que me quede transparente poque bootstrap lo cambia
@@ -61,8 +61,8 @@
     font-size: 40px;
 }
 .card-text{
-    font-family: 'Patrick Hand', cursive;
-    font-size: 21px;
+    font-family: 'Patrick Hand bold', cursive;
+    font-size: 18px;
 }
 .card{
      background-color: rgb(241, 241, 229);

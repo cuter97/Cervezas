@@ -1,9 +1,13 @@
 /* SECCION CERVEZAS */
 
 /* SUBMENU */
-.blanco{
+.contenedor-menus{
     position: sticky;
-    top: 66px;
+    top: 0;
+    z-index: 100;
+}
+.blanco{
+
     z-index: 1999;
     padding-top: 0%;
     /* para que me quede transparente poque bootstrap lo cambia

@@ -305,7 +305,7 @@ footer {
       align-items: center; }
       .bares-flex-2 .bares__contenido--2 {
         margin-left: 0px;
-        font-size: small; } }
+        font-size: 23px; } }
 
 .bares__contenido--1 {
   margin-right: 50px;
@@ -319,9 +319,12 @@ footer {
 
 /* SECCION CERVEZAS */
 /* SUBMENU */
-.blanco {
+.contenedor-menus {
   position: sticky;
-  top: 66px;
+  top: 0;
+  z-index: 100; }
+
+.blanco {
   z-index: 1999;
   padding-top: 0%;
   /* para que me quede transparente poque bootstrap lo cambia

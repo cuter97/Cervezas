@@ -215,6 +215,12 @@ footer {
   .logos-cervecerias .img-logos-patagonia {
     height: 231.25px;
     width: 231.25px; }
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
+    .logos-cervecerias {
+      flex-direction: column; } }
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    .logos-cervecerias {
+      flex-direction: column; } }
 
 .h1-section-index {
   text-transform: uppercase;
@@ -279,7 +285,7 @@ footer {
       align-items: center; }
       .bares-flex .bares__contenido--1 {
         margin-right: 0px;
-        font-size: small; } }
+        font-size: 23px; } }
 
 .bares-flex-2 {
   display: flex;
@@ -303,12 +309,12 @@ footer {
 
 .bares__contenido--1 {
   margin-right: 50px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand italica', cursive;
   font-size: 21px; }
 
 .bares__contenido--2 {
   margin-left: 50px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand italica', cursive;
   font-size: 21px; }
 
 /* SECCION CERVEZAS */
@@ -359,8 +365,8 @@ footer {
   font-size: 40px; }
 
 .card-text {
-  font-family: 'Patrick Hand', cursive;
-  font-size: 21px; }
+  font-family: 'Patrick Hand bold', cursive;
+  font-size: 18px; }
 
 .card {
   background-color: #f1f1e5; }
@@ -481,7 +487,7 @@ footer {
     font-size: 40px;
     padding: 50px; }
   .nosotros__flex .nosotros__contenido {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand bold', cursive;
     font-size: 21px;
     text-align: center;
     padding-bottom: 60px;

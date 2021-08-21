@@ -5,6 +5,10 @@
     font-family: 'Staatliches', cursive;
     font-size: 30px;
     letter-spacing: 3px ;
+
+    @include size(phone){
+      text-align: center;
+    }
   }
   /* margin aplicado con bootstrap */
   .subtitulo-cada-bar{
@@ -48,6 +52,14 @@
         margin-right: 0px;
         font-size: 23px;
       }
+      .img-blest-bares{
+        @include dimensiones(150px,200px);
+      }
+      
+      .img-patagonia-bares{
+        @include dimensiones(128.75px,200px);
+      }
+      
     }
 
   }
@@ -73,8 +85,17 @@
         margin-left: 0px;
         font-size: 23px;
       }
+      .img-manush-bares{
+        @include dimensiones(150px,200px);
+      }
+
+      .img-berlina-bares{
+        @include dimensiones(112.5px,200px);
+      }
     }
   }
+
+
   .bares__contenido--1{
     @extend %propiedades-3;
     margin-right: 50px;

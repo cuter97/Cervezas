@@ -7,7 +7,8 @@ footer{
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic bold', sans-serif;
+    font-weight: bold;
 }
 
 .contenedor{
@@ -28,22 +29,62 @@ footer{
             font-family: 'Staatliches', cursive;
             color: nth($colores-footer, 2 );
             font-size: 20px;
+        }
+        .color-twitter{
             &:hover{
-                color: #a4af04;
+                color: rgb(0, 247, 255);
             }
         }
-
+        .color-face{
+            &:hover{
+                color: rgb(4, 0, 255);
+            }
+        }
+        .color-insta{
+            &:hover{
+                color: rgb(255, 255, 255);
+            }
+        }
     }
 
     /* COLUMNA2 */
     .imagen-logo-mail{
-        margin: 10px 40px;
         @extend %propiedades-2;
+        flex-direction: column;
+        .footer-1{
+            @extend %propiedades-3;
+
+            p{
+                margin-bottom: 0%;
+            }
+        }
+
+        .footer-2{
+            .correo{
+                margin: 20px 0px;    
+            }
+            li{
+                list-style-type:none;
+                a{
+                    @extend %decoration-none;  
+                    color: black;
+                    &:hover{
+                        color: #a4af04;
+                        @include size(phone){
+                            &:hover{
+                                color:#e43905;
+                            }
+                        }
+                    }                  
+                }
+            }
+        }
 
         .correo{
             margin-left: 10px;
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Nanum Gothic bold', sans-serif;
             font-size: 15px;
+            font-weight: bolder;
         }
     }
 

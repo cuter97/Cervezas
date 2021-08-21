@@ -6,7 +6,7 @@
     top: 0;
     z-index: 100;
 }
-.blanco{
+.cervezas__contenedor-submenu{
 
     z-index: 1999;
     padding-top: 0%;
@@ -14,7 +14,7 @@
     porque lo tiene como prioridad le agregue un important*/
     background-color:transparent !important;
 
-    .pegajoso{
+    .cervezas-sub-menu{
         font-family: 'Staatliches', cursive;
         font-size: 20px;
         letter-spacing: 1px;
@@ -44,6 +44,10 @@
             }
         }
     }
+
+    @include size(phone){
+        flex-direction: column;
+    }
 }
 
 .contenedor-cervezas > {
@@ -55,6 +59,8 @@
     }
 }
 
+/*tengo que sobrescribir las clases de bootstrap 
+ya que si pongo una clase propia no se modifica*/
 .card-title{
      text-align: center;
      font-size: 30px;
@@ -74,7 +80,7 @@
 
 /*seccion cervezas adaptada a celular*/
 @include size(otro){
-    .col-md-4{
+    .cerve-marg{
         @include display-2(flex,center,center);
         padding-top: 20px;
     }

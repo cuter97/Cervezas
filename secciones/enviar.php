@@ -19,9 +19,9 @@ $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
 $para = 'aguscastets@gmail.com'; // El mail a donde van a llegar los mensajes
-$asunto = 'Mensaje de mi sitio web';
+// $asunto = 'Mensaje de mi sitio web';
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+mail($para, utf8_decode($mensaje), $header);
 
 header('Location:contacto.html');
 

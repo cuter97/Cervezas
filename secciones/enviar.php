@@ -12,7 +12,7 @@ $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
 // Como me a llegar el cuerpo del mail a mi, o sea lo que la gente escribió en el form
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje = "Este mensaje fue enviado por " . $nombre . " \r\n";
 $mensaje .= "Su e-mail es: " . $mail . " \r\n";
 // $mensaje .= "El asunto es: " . $asunto . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
@@ -23,6 +23,6 @@ $para = 'aguscastets@gmail.com'; // El mail a donde van a llegar los mensajes
 
 mail($para, utf8_decode($mensaje), $header);
 
-header('Location:contacto.html');
+header('Location:../index.html');
 
 ?>

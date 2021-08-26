@@ -57,9 +57,13 @@
         grid-area: contacto;
         flex-direction: column;
         @extend %propiedades-3;
-        row-gap: 20px;
+        row-gap: 10px;
         margin-bottom: 30px;
         margin-top: -110px;
+        
+        .labels{
+            font-family: 'Staatliches, bold', cursive;
+        }
 
         #consultas{
             text-transform: uppercase;
@@ -71,7 +75,7 @@
             height: 40px;
             background-color: nth($colores-contacto , 2 );
         }
-        #texto{
+        .texto{
             @include dimensiones(300px,453px);
             background-color: nth($colores-contacto , 2 );
         }
@@ -105,7 +109,7 @@
             grid-area: unset;
             margin: 20px 0px;
           
-            #texto, .tamInput{
+            .texto, .tamInput{
                 width: 300px;
             }
         }
@@ -124,7 +128,7 @@
             grid-area: unset;
             margin: 20px 0px;
 
-            #texto, .tamInput{
+            .texto, .tamInput{
                 width: 200px;
             }
         }

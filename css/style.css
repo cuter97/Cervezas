@@ -493,9 +493,11 @@ ya que si pongo una clase propia no se modifica*/
   .contenedorContacto #mensajeMail {
     grid-area: contacto;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
     margin-bottom: 30px;
     margin-top: -110px; }
+    .contenedorContacto #mensajeMail .labels {
+      font-family: 'Staatliches, bold', cursive; }
     .contenedorContacto #mensajeMail #consultas {
       text-transform: uppercase;
       font-family: 'Staatliches', cursive;
@@ -504,7 +506,7 @@ ya que si pongo una clase propia no se modifica*/
     .contenedorContacto #mensajeMail .tamInput {
       height: 40px;
       background-color: #f0ecec; }
-    .contenedorContacto #mensajeMail #texto {
+    .contenedorContacto #mensajeMail .texto {
       height: 300px;
       width: 453px;
       background-color: #f0ecec; }
@@ -531,7 +533,7 @@ ya que si pongo una clase propia no se modifica*/
       .contenedorContacto #mensajeMail {
         grid-area: unset;
         margin: 20px 0px; }
-        .contenedorContacto #mensajeMail #texto, .contenedorContacto #mensajeMail .tamInput {
+        .contenedorContacto #mensajeMail .texto, .contenedorContacto #mensajeMail .tamInput {
           width: 300px; } }
   @media screen and (min-width: 0px) and (max-width: 480px) {
     .contenedorContacto {
@@ -542,7 +544,7 @@ ya que si pongo una clase propia no se modifica*/
       .contenedorContacto #mensajeMail {
         grid-area: unset;
         margin: 20px 0px; }
-        .contenedorContacto #mensajeMail #texto, .contenedorContacto #mensajeMail .tamInput {
+        .contenedorContacto #mensajeMail .texto, .contenedorContacto #mensajeMail .tamInput {
           width: 200px; } }
 
 /*seccion nosotros*/

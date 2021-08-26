@@ -100,13 +100,22 @@
         </section>
     
         <!-- PARA QUE NOS CONTACTEN -->
-        <div id="mensajeMail">
+        <form action="enviar.php" method="POST" name="contact-form" id="mensajeMail">
+
             <h2 id="consultas">No dude en consultarnos a nuestro mail</h2>
-            <input type="email" placeholder="Email" size="60px" class="tamInput">
-            <input type="email" placeholder="Nombre" size="60px" class="tamInput">
-            <textarea placeholder="Text" name="Text" id="texto" cols="30" rows="10"></textarea>
-            <input type="button" value="enviar" id="bottom">
-        </div>
+            
+            <label class="labels" for="name">Nombre</label>
+            <input type="text" size="60px" class="tamInput" name="nombre">
+
+            <label class="labels" for="mail">Email</label>
+            <input type="email" name="email" id="mail" size="60px" class="tamInput">
+
+            <label class="labels" for="mensaje">Mensaje</label>
+            <textarea name="mensaje" placeholder="Text" name="Text" id="mensaje" cols="30" rows="10" class="texto"></textarea>
+
+            <input type="submit" value="Enviar" id="bottom">
+
+        </form>
     </div>
 
     <!-- redes sociales -->

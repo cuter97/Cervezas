@@ -13,6 +13,9 @@
     
     <!-- link CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- link css de iconos  -->
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Cervezas Bariloche - HOPS Patagonia</title>
 </head>
 
@@ -42,7 +45,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid justify-content-start ">
             
-            <a class="navbar-brand img-header" href="index.html">
+            <a class="navbar-brand img-header imagen-beer" href="index.html">
                 <img src="Imagenes/cerveza-icono.png" alt="cerveza" width="40" height="40">
             </a>
             
@@ -52,18 +55,26 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav contenedor-ul">
                     <li class="nav-item">
-                        <a class="nav-link color-header active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link color-header active" aria-current="page" href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-header" href="secciones/bares.html"> Historia y Bares</a>
+                        <a class="nav-link color-header" href="secciones/bares.html">
+                            <i class="fas fa-landmark"></i>
+                            <span>Historia y Bares</span>
+                    
+                        </a>
                     </li>
                     
                     <!-- SUBMENU -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle color-header" href="secciones/cervezas.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Cervezas
+                            <i class="fas fa-beer"></i>
+                            <span>Cervezas</span> 
                         </a>
                         <ul class="dropdown-menu submenu " aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="secciones/cervezas.html#BLEST">Blest</a></li>
@@ -74,10 +85,16 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link color-header" href="secciones/nosotros.html">Nosotros</a>
+                        <a class="nav-link color-header" href="secciones/nosotros.html">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Nosotros</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-header" href="secciones/contacto.html">Contacto</a>
+                        <a class="nav-link color-header" href="secciones/contacto.html">
+                            <i class="far fa-address-book"></i>
+                            <span>Contacto</span>
+                        </a>
                     </li>
 
                 </ul>
@@ -133,20 +150,32 @@
             <p class="parrafoFooter">Seguinos en nuestras redes sociales</p>
 
             <nav>
-                <Ul>
+                <ul class="nav-contenedor">
                     <li class="imagen_logos_redes">
-                        <img src="Imagenes/instagram.svg" alt="icono">
-                        <a class="color-insta" href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener">INSTAGRAM</a>
+                        <a class="color-insta" href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener">
+
+                            <i class="color-icono fab fa-instagram"></i>
+                            <span>instagram</span>
+
+                        </a>
                     </li>
                     <li class="imagen_logos_redes">
-                        <img src="Imagenes/twitter.svg" alt="icono">
-                        <a class="color-twitter" href="https://twitter.com/?lang=es" target="_blank" rel="noopener">TWITTER</a>
+                        <a class="color-twitter" href="https://twitter.com/?lang=es" target="_blank" rel="noopener">
+
+                            <i class="color-icono fab fa-twitter"></i>
+                            <span>twitter</span>
+
+                        </a>
                     </li>
                     <li class="imagen_logos_redes">
-                        <img src="Imagenes/facebook2.svg" alt="icono">
-                        <a class="color-face" href="https://es-la.facebook.com/" target="_blank" rel="noopener">FACEBOOK</a>
+                        <a class="color-face" href="https://es-la.facebook.com/" target="_blank" rel="noopener">
+                            
+                            <i class="color-icono fab fa-facebook-f"></i>
+                            <span>facebook</span>
+
+                        </a>
                     </li>
-                </Ul>
+                </ul>
             </nav>
         </div>
         
@@ -156,7 +185,7 @@
 
             <div class="imagen-logo-mail">
                 <section class="footer-1">
-                    <img src="Imagenes/mail.svg" alt="icono">
+                    <i class="color-icono fas fa-envelope"></i>
                     <p class="correo">ejemplo@gmail.com</p>
                 </section>
                 <section class="footer-2">

@@ -9,6 +9,7 @@ footer{
     font-size: 20px;
     font-family: 'Nanum Gothic bold', sans-serif;
     font-weight: bold;
+    color: #b8343e;
 }
 
 .contenedor{
@@ -18,56 +19,72 @@ footer{
         "columna1 columna2 columna3";
     column-gap: 10px;
 
+    .color-icono{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;  
+    }
+
+    .nav-contenedor{
+        display: flex;
+        justify-content: center;
+        @extend %decoration-none;
+        padding: 0%;
+    }
+
+
+
     /* COLUMNA 1 */
     .imagen_logos_redes{
-        margin: 10px 40px;
-        @extend %propiedades-2;
- 
+         margin: 20px;
+
+        
         a{
+            @extend %propiedades-2;
+            flex-direction: column;
             @extend %decoration-none;
-            margin-left: 10px;
-            font-family: 'Staatliches', cursive;
-            color: nth($colores-footer, 2 );
-            font-size: 20px;
+            
+            color: #fff;
+            font-size: 10px;
         }
-        .color-twitter{
+        .color-twitter,.fa-twitter{
             &:hover{
-                color: rgb(0, 247, 255);
+                color: rgb(59, 221, 226);
             }
         }
-        .color-face{
+        .color-face,.fa-facebook-f{
             &:hover{
-                color: rgb(4, 0, 255);
+                color: rgb(57, 54, 212);
             }
         }
-        .color-insta{
+        .color-insta,.fa-instagram{
             &:hover{
-                color: rgb(255, 255, 255);
+                color: rgb(177, 38, 38);
             }
         }
     }
 
     /* COLUMNA2 */
     .imagen-logo-mail{
+
         @extend %propiedades-2;
         flex-direction: column;
         .footer-1{
             @extend %propiedades-3;
-
+            
             p{
-                margin-bottom: 0%;
+                margin-bottom: 10px;
             }
         }
-
+        
         .footer-2{
             .correo{
-                margin: 20px 0px;    
+                margin: 20px 0px;
             }
             li{
-                list-style-type:none;
                 a{
                     @extend %decoration-none;  
-                    color: black;
+                    color: #fff;
                     &:hover{
                         color: #a4af04;
                         @include size(phone){
@@ -85,6 +102,7 @@ footer{
             font-family: 'Nanum Gothic bold', sans-serif;
             font-size: 15px;
             font-weight: bolder;
+            color: #fff;
         }
     }
 
@@ -111,8 +129,12 @@ footer{
         grid-template-columns: 100%;
         row-gap: 10px; /* espacio entre filas */
         grid-template-areas: unset;
+
+        .parrafoFooter{
+            color: black;
+        }
         .imagen_logos_redes{
-            margin: 10px 0px;
+            margin: 10px;
         }
         .imagen-logo-mail{
             justify-content: center;

@@ -129,6 +129,13 @@
 
 
 // MENU DE NAVEGACION
+.imagen-beer{
+    &:hover{
+        transform: scale(1.5,1.5);
+        transition: 1.5s ease;
+    }
+}
+
 .color-header{
     margin: 0px 20px;
     font-size: 17px;
@@ -136,8 +143,62 @@
 .img-header{
     margin: 0px 20px;
 }
+.contenedor-ul {
+    span{
+        &:hover{
+            color:#d16200;
+        }
+    }
+    i{
+        margin-right: 10px;
+    }
+}
+.fa-home{
+    &:hover{
+        color:rgb(0, 174, 255);
+    }
+}
+.fa-beer{
+    &:hover{
+        color:rgb(223, 185, 18);
+    }
+}
+.fa-address-book{
+    &:hover{
+        color:rgb(151, 86, 32);
+    }
+}
+.fa-user-tie{
+    &:hover{
+        color:rgb(167, 28, 28);
+    }
+}
+.fa-landmark{
+    &:hover{
+        color:rgb(99, 165, 24);
+    }
+}
 
-
+@include size(phone){
+    li{
+        margin-left: 8px;
+    }
+    .fa-home{
+            color:rgb(0, 174, 255);
+    }
+    .fa-beer{
+            color:rgb(223, 185, 18);
+    }
+    .fa-address-book{
+            color:rgb(151, 86, 32);
+    }
+    .fa-user-tie{
+            color:rgb(167, 28, 28);
+    }
+    .fa-landmark{ 
+            color:rgb(99, 165, 24);
+    }
+}
 .submenu {
     li {
         a {

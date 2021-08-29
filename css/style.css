@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.contenedor .imagen_logos_redes, .contenedor .imagen-logo-mail {
+.contenedor .imagen_logos_redes a, .contenedor .imagen-logo-mail {
   display: flex;
   align-items: center; }
 
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center; }
 
-.contenedor .imagen_logos_redes a, .contenedor .imagen-logo-mail .footer-2 li a, .error button a {
+.contenedor .nav-contenedor, .contenedor .imagen_logos_redes a, .contenedor .imagen-logo-mail .footer-2 li a, .error button a {
   list-style: none;
   text-decoration: none; }
 
@@ -137,12 +137,51 @@
       .Iam .innerIam {
         display: none; } }
 
+.imagen-beer:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1.5s ease; }
+
 .color-header {
   margin: 0px 20px;
   font-size: 17px; }
 
 .img-header {
   margin: 0px 20px; }
+
+.contenedor-ul span:hover {
+  color: #d16200; }
+
+.contenedor-ul i {
+  margin-right: 10px; }
+
+.fa-home:hover {
+  color: #00aeff; }
+
+.fa-beer:hover {
+  color: #dfb912; }
+
+.fa-address-book:hover {
+  color: #975620; }
+
+.fa-user-tie:hover {
+  color: #a71c1c; }
+
+.fa-landmark:hover {
+  color: #63a518; }
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  li {
+    margin-left: 8px; }
+  .fa-home {
+    color: #00aeff; }
+  .fa-beer {
+    color: #dfb912; }
+  .fa-address-book {
+    color: #975620; }
+  .fa-user-tie {
+    color: #a71c1c; }
+  .fa-landmark {
+    color: #63a518; } }
 
 .submenu li a {
   font-family: 'Open sans';
@@ -175,7 +214,7 @@
         background-color: #dcdbdf; }
 
 footer {
-  background: #A51E1E;
+  background: #212529;
   padding: 20px; }
 
 .parrafoFooter {
@@ -183,7 +222,8 @@ footer {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'Nanum Gothic bold', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #b8343e; }
 
 .contenedor {
   display: grid;
@@ -195,39 +235,45 @@ footer {
   /* COLUMNA3 */
   /*footer adaptado a tablet*/
   /*footer adaptado a celular*/ }
+  .contenedor .color-icono {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px; }
+  .contenedor .nav-contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 0%; }
   .contenedor .imagen_logos_redes {
-    margin: 10px 40px; }
+    margin: 20px; }
     .contenedor .imagen_logos_redes a {
-      margin-left: 10px;
-      font-family: 'Staatliches', cursive;
-      color: #161515;
-      font-size: 20px; }
-    .contenedor .imagen_logos_redes .color-twitter:hover {
-      color: #00f7ff; }
-    .contenedor .imagen_logos_redes .color-face:hover {
-      color: #0400ff; }
-    .contenedor .imagen_logos_redes .color-insta:hover {
-      color: white; }
+      flex-direction: column;
+      color: #fff;
+      font-size: 10px; }
+    .contenedor .imagen_logos_redes .color-twitter:hover, .contenedor .imagen_logos_redes .fa-twitter:hover {
+      color: #3bdde2; }
+    .contenedor .imagen_logos_redes .color-face:hover, .contenedor .imagen_logos_redes .fa-facebook-f:hover {
+      color: #3936d4; }
+    .contenedor .imagen_logos_redes .color-insta:hover, .contenedor .imagen_logos_redes .fa-instagram:hover {
+      color: #b12626; }
   .contenedor .imagen-logo-mail {
     flex-direction: column; }
     .contenedor .imagen-logo-mail .footer-1 p {
-      margin-bottom: 0%; }
+      margin-bottom: 10px; }
     .contenedor .imagen-logo-mail .footer-2 .correo {
       margin: 20px 0px; }
-    .contenedor .imagen-logo-mail .footer-2 li {
-      list-style-type: none; }
-      .contenedor .imagen-logo-mail .footer-2 li a {
-        color: black; }
-        .contenedor .imagen-logo-mail .footer-2 li a:hover {
-          color: #a4af04; }
-          @media screen and (min-width: 0px) and (max-width: 480px) {
-            .contenedor .imagen-logo-mail .footer-2 li a:hover:hover {
-              color: #e43905; } }
+    .contenedor .imagen-logo-mail .footer-2 li a {
+      color: #fff; }
+      .contenedor .imagen-logo-mail .footer-2 li a:hover {
+        color: #a4af04; }
+        @media screen and (min-width: 0px) and (max-width: 480px) {
+          .contenedor .imagen-logo-mail .footer-2 li a:hover:hover {
+            color: #e43905; } }
     .contenedor .imagen-logo-mail .correo {
       margin-left: 10px;
       font-family: 'Nanum Gothic bold', sans-serif;
       font-size: 15px;
-      font-weight: bolder; }
+      font-weight: bolder;
+      color: #fff; }
   .contenedor .columna_3 .logo__footer {
     /*tamaño logo*/
     height: 190px;
@@ -247,8 +293,10 @@ footer {
       row-gap: 10px;
       /* espacio entre filas */
       grid-template-areas: unset; }
+      .contenedor .parrafoFooter {
+        color: black; }
       .contenedor .imagen_logos_redes {
-        margin: 10px 0px; }
+        margin: 10px; }
       .contenedor .imagen-logo-mail {
         justify-content: center; }
         .contenedor .imagen-logo-mail .correo {

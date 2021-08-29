@@ -8,11 +8,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-.contenedor .imagen_logos_redes a, .contenedor .imagen-logo-mail {
+.contenedor .imagen_logos_redes a, .contenedor .imagen-logo-mail, .imagenes-index {
   display: flex;
   align-items: center; }
 
-.Iam, .contenedor .imagen-logo-mail .footer-1, .contenedor .columna_3, .logos-cervecerias, .bares__contenido--1, .bares__contenido--2, .contenedorContacto #marcasLink .logos-cervecerias-contacto, .contenedorContacto #mensajeMail {
+.Iam, .contenedor .imagen-logo-mail .footer-1, .contenedor .columna_3, .logos-cervecerias, .texto-index, .bares__contenido--1, .bares__contenido--2, .contenedorContacto #marcasLink .logos-cervecerias-contacto, .contenedorContacto #mensajeMail {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -169,20 +169,6 @@
 .fa-landmark:hover {
   color: #63a518; }
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  li {
-    margin-left: 8px; }
-  .fa-home {
-    color: #00aeff; }
-  .fa-beer {
-    color: #dfb912; }
-  .fa-address-book {
-    color: #975620; }
-  .fa-user-tie {
-    color: #a71c1c; }
-  .fa-landmark {
-    color: #63a518; } }
-
 .submenu li a {
   font-family: 'Open sans';
   font-size: 20px; }
@@ -324,8 +310,25 @@ footer {
 .h1-section-index {
   text-transform: uppercase;
   font-family: 'Staatliches', cursive;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center; }
+
+.texto-index {
+  font-family: 'Patrick Hand italica', cursive;
+  text-align: center; }
+
+.imagenes-index {
+  justify-content: space-evenly;
+  overflow: hidden; }
+  .imagenes-index img {
+    max-width: 100%;
+    margin: 20px 0px; }
+  @media screen and (min-width: 481px) and (max-width: 1030px) {
+    .imagenes-index {
+      flex-direction: column; } }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .imagenes-index {
+      flex-direction: column; } }
 
 .carousel-inner > .carousel-item > img {
   width: 100%;

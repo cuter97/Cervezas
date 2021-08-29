@@ -18,7 +18,7 @@
 .logos-cervecerias{
     @extend %propiedades-3;
     flex-wrap: wrap;
-  
+    
     .img-logos-blest{
         @include dimensiones(300px,250px);
     }
@@ -38,9 +38,34 @@
 .h1-section-index{
     text-transform: uppercase;
     font-family: 'Staatliches', cursive;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
+.texto-index{
+    font-family: 'Patrick Hand italica', cursive;
+    @extend %propiedades-3;
+    text-align: center;
+}
+
+.imagenes-index{
+    @extend %propiedades-2;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+    img{
+         max-width: 100%;
+        margin: 20px 0px;
+    }
+
+    @include size(tablet){
+        flex-direction: column;
+    }
+
+    @include size(otro){
+        flex-direction: column;      
+    }
+}
+
  .carousel-inner > {
      .carousel-item > {
 

@@ -34,7 +34,7 @@
       justify-content:space-around;
       text-align: center;
       flex-direction: column;
-
+      
       img{
         &:hover{
           transform: scale(1.2,1.2);
@@ -58,6 +58,12 @@
         margin-right: 0px;
         font-size: 23px;
       }
+
+      div{
+        img{
+          @include dimensiones(17.1875rem,18.75rem);
+        }
+      }
       
     }
 
@@ -73,6 +79,7 @@
       justify-content:space-around;
       text-align: center;
       flex-direction: column;
+      
 
       img{
         &:hover{
@@ -96,6 +103,12 @@
       .bares__contenido--2{
         margin-left: 0px;
         font-size: 23px;
+      }
+
+      div{
+        img{
+          @include dimensiones(275px,300px);
+        }
       }
     }
   }

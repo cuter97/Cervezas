@@ -384,7 +384,10 @@ footer {
       align-items: center; }
       .bares-flex .bares__contenido--1 {
         margin-right: 0px;
-        font-size: 23px; } }
+        font-size: 23px; }
+      .bares-flex div img {
+        height: 17.1875rem;
+        width: 18.75rem; } }
 
 .bares-flex-2 {
   display: flex;
@@ -412,7 +415,10 @@ footer {
       align-items: center; }
       .bares-flex-2 .bares__contenido--2 {
         margin-left: 0px;
-        font-size: 23px; } }
+        font-size: 23px; }
+      .bares-flex-2 div img {
+        height: 275px;
+        width: 300px; } }
 
 .bares__contenido--1 {
   margin-right: 3.125rem;

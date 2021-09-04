@@ -1,11 +1,11 @@
 footer{
     background: nth($colores-footer , 1 );
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .parrafoFooter{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-size: 20px;
     font-family: 'Nanum Gothic bold', sans-serif;
     font-weight: bold;
@@ -22,7 +22,7 @@ footer{
     .color-icono{
     font-size: 30px;
     color: #fff;
-    margin-bottom: 10px;  
+    margin-bottom: 0.625rem;  
     }
 
     .nav-contenedor{
@@ -36,7 +36,7 @@ footer{
 
     /* COLUMNA 1 */
     .imagen_logos_redes{
-         margin: 20px;
+         margin: 1.25rem;
 
         
         a{
@@ -73,15 +73,16 @@ footer{
             @extend %propiedades-3;
             
             p{
-                margin-bottom: 10px;
+                margin-bottom: 0.625rem;
             }
         }
         
         .footer-2{
             .correo{
-                margin: 20px 0px;
+                margin: 1.25rem 0rem;
             }
             li{
+                @extend %decoration-none;  
                 a{
                     @extend %decoration-none;  
                     color: #fff;
@@ -98,7 +99,7 @@ footer{
         }
 
         .correo{
-            margin-left: 10px;
+            margin-left: 0.625rem;
             font-family: 'Nanum Gothic bold', sans-serif;
             font-size: 15px;
             font-weight: bolder;
@@ -111,7 +112,7 @@ footer{
         @extend %propiedades-3;
 
         .logo__footer{ /*tamaño logo*/
-            @include dimensiones(190px,190px);
+            @include dimensiones(11.875rem,11.875rem);
             border-radius: 1000px;
             border: 2px solid nth($colores-footer, 3 );
         }
@@ -125,14 +126,11 @@ footer{
 
     /*footer adaptado a celular*/
     @include size(phone) {
-        background-color: #b2bb35;
+
         grid-template-columns: 100%;
         row-gap: 10px; /* espacio entre filas */
         grid-template-areas: unset;
 
-        .parrafoFooter{
-            color: black;
-        }
         .imagen_logos_redes{
             margin: 10px;
         }

@@ -17,23 +17,23 @@
             font-family: 'Staatliches', cursive;
             font-size: 30px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 2.5rem;
         }
         .logos-cervecerias-contacto{
             @extend %propiedades-3;
             flex-direction: column;
             
             .img-contacto-blest{
-                @include dimensiones(140px,115px);
+                @include dimensiones(8.75rem,7.1875rem);
             }
             .img-contacto-manush{
-                @include dimensiones(83.75px,155px);
+                @include dimensiones(5.2344rem,9.6875rem);
             }
             .img-contacto-patagonia{
-                @include dimensiones(115.625px,115.625px);
+                @include dimensiones(7.2266rem,7.2266rem);
             }  
             .img-contacto-berlina{
-                @include dimensiones(102.5px,102.5px);
+                @include dimensiones(6.4063rem,6.4063rem);
             }
 
             .tam{
@@ -57,9 +57,9 @@
         grid-area: contacto;
         flex-direction: column;
         @extend %propiedades-3;
-        row-gap: 10px;
-        margin-bottom: 30px;
-        margin-top: -110px;
+        row-gap: 0.625rem;
+        margin-bottom: 1.875rem;
+        margin-top: -6.875rem;
         
         .labels{
             font-family: 'Staatliches, bold', cursive;
@@ -69,14 +69,14 @@
             text-transform: uppercase;
             font-family: 'Staatliches', cursive;
             font-size: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
         .tamInput{
-            height: 40px;
+            height: 2.5rem;
             background-color: nth($colores-contacto , 2 );
         }
         .texto{
-            @include dimensiones(300px,453px);
+            @include dimensiones(18.75rem,28.3125rem);
             background-color: nth($colores-contacto , 2 );
         }
         #bottom{
@@ -84,7 +84,7 @@
             font-family:Verdana,Helvetica;
             color:nth($colores-contacto , 3 );
             background:nth($colores-contacto , 5 );
-            @include dimensiones(30px,100px);
+            @include dimensiones(1.875rem,6.25rem);
             text-transform: uppercase;
 	        transition: 0.5s;
 

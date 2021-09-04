@@ -21,7 +21,7 @@
         background: nth($colores-cervezas , 1 );
         margin: 0px auto;
         padding: 10px;
-        @include radioBottom(40px,40px);
+        @include radioBottom(2.5rem,2.5rem);
       }
   }
 
@@ -40,7 +40,7 @@
             &:hover{
                 color: nth($colores-cervezas , 2 );
                 transition: all .2s;
-                border-radius: 30px;
+                border-radius: 1.875rem;
             }
         }
     }
@@ -82,7 +82,7 @@ ya que si pongo una clase propia no se modifica*/
 @include size(otro){
     .cerve-marg{
         @include display-2(flex,center,center);
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
     .card-text{
         font-size: 20px;

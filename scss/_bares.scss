@@ -3,8 +3,8 @@
 .h1-bares{
     text-transform: uppercase;
     font-family: 'Staatliches', cursive;
-    font-size: 30px;
-    letter-spacing: 3px ;
+    font-size: 1.875rem;
+    letter-spacing: 0.1875rem ;
 
     @include size(phone){
       text-align: center;
@@ -13,29 +13,35 @@
   /* margin aplicado con bootstrap */
   .subtitulo-cada-bar{
     font-family: 'Staatliches', cursive;
-    font-size: 25px;
-    letter-spacing: 1px;
+    font-size: 1.5625rem;
+    letter-spacing: 0.0625rem;
   }
   
   /* modificacion del tamaño de las imagenes */
   
-  .img-blest-bares{
-    @include dimensiones(300px,400px);
+  .img-bares{
+    @include dimensiones(18.75rem,25rem);
   }
-  .img-manush-bares{
-    @include dimensiones(300px,400px);
-  }
-  .img-patagonia-bares{
-    @include dimensiones(257.5px,400px);
-  }
-  .img-berlina-bares{
-    @include dimensiones(225px,400px);
-  }
+  
   
   /* margin aplicado con bootstrap */
   .bares-flex{
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
+
+    div{
+      display: flex;
+      justify-content:space-around;
+      text-align: center;
+      flex-direction: column;
+
+      img{
+        &:hover{
+          transform: scale(1.2,1.2);
+          transition: 1.5s ease;
+        }
+      }
+    }
 
     /*query adaptado a tablet*/
     @include size(tablet){
@@ -52,13 +58,6 @@
         margin-right: 0px;
         font-size: 23px;
       }
-      .img-blest-bares{
-        @include dimensiones(150px,200px);
-      }
-      
-      .img-patagonia-bares{
-        @include dimensiones(128.75px,200px);
-      }
       
     }
 
@@ -68,7 +67,20 @@
   .bares-flex-2{
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
+    div{
+      display: flex;
+      justify-content:space-around;
+      text-align: center;
+      flex-direction: column;
+
+      img{
+        &:hover{
+          transform: scale(1.2,1.2);
+          transition: 1.5s ease;
+        }
+      }
+    }
 
     /*query adaptado a tablet*/
     @include size (tablet) {
@@ -85,26 +97,19 @@
         margin-left: 0px;
         font-size: 23px;
       }
-      .img-manush-bares{
-        @include dimensiones(150px,200px);
-      }
-
-      .img-berlina-bares{
-        @include dimensiones(112.5px,200px);
-      }
     }
   }
 
 
   .bares__contenido--1{
     @extend %propiedades-3;
-    margin-right: 50px;
+    margin-right: 3.125rem;
     font-family: 'Patrick Hand italica', cursive;
     font-size: 21px;
   }
   .bares__contenido--2{
     @extend %propiedades-3;
-    margin-left: 50px;
+    margin-left: 3.125rem;
     font-family: 'Patrick Hand italica', cursive;
     font-size: 21px;
   }

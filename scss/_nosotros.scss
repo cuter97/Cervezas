@@ -2,28 +2,28 @@
 .nosotros__flex{
     display: flex;
     @include display( column,center);
-    box-shadow: 0px 0px 10px;
-    margin: 20px 200px;
-    padding: 70px;
+    box-shadow: 0rem 0rem 0.625rem;
+    margin: 1.25rem 12.5rem;
+    padding: 4.375rem;
 
     
     .nosotros__titulo{
         text-align: center;
         font-family: 'Staatliches', cursive;
         font-size: 40px;
-        padding: 50px;
+        padding: 3.125rem;
     }
     
     .nosotros__contenido{
         font-family: 'Patrick Hand bold', cursive;
         font-size: 21px;
         text-align: center;
-        padding-bottom: 60px;
-        line-height: 40px;
+        padding-bottom: 3.75rem;
+        line-height: 2.5rem;
         width: 60%;
     }
     img{
-        @include dimensiones(400px,400px)
+        @include dimensiones(25rem,25rem)
     }
     /*query seccion nosotros tablet*/
     @include size(tablet){
@@ -32,8 +32,8 @@
         margin: 0%;
         padding: 0%;;
         img{
-            @include dimensiones(300px,300px);
-            padding: 50px;
+            @include dimensiones(18.75rem,18.75rem);
+            padding: 3.125rem;
         }
     }
     
@@ -43,7 +43,7 @@
         margin: 0%;
         padding: 0%;;
         img{
-            @include dimensiones(300px,300px);
+            @include dimensiones(18.75rem,18.75rem);
             padding: 50px;
         }
     }

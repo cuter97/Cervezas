@@ -40,11 +40,13 @@
     font-family: 'Staatliches', cursive;
     font-size: 40px;
     text-align: center;
+    margin-top: 1.875rem;
 }
 .texto-index{
     font-family: 'Patrick Hand italica', cursive;
     @extend %propiedades-3;
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .imagenes-index{
@@ -53,7 +55,7 @@
     overflow: hidden;
     
     img{
-         max-width: 100%;
+        max-width: 100%;
         margin: 20px 0px;
     }
 
@@ -70,7 +72,6 @@
      .carousel-item > {
 
          img{
-             width: 100%; 
              height: 100%; 
              object-fit:cover;
          }

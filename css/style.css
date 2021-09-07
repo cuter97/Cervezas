@@ -12,7 +12,7 @@
   display: flex;
   align-items: center; }
 
-.Iam, .contenedor .imagen-logo-mail .footer-1, .contenedor .columna_3, .logos-cervecerias, .texto-index, .bares__contenido--1, .bares__contenido--2, .contenedorContacto #marcasLink .logos-cervecerias-contacto, .contenedorContacto #mensajeMail {
+.Iam, .contenedor .imagen-logo-mail .footer-1, .contenedor .columna_3, .slider .slide, .texto-index, .bares__contenido--1, .bares__contenido--2, .contenedorContacto #marcasLink .logos-cervecerias-contacto, .contenedorContacto #mensajeMail {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -89,14 +89,6 @@
     top: -6.875rem; } }
 
 @-o-keyframes move {
-  0% {
-    top: 0rem; }
-  40% {
-    top: -3.75rem; }
-  80% {
-    top: -6.875rem; } }
-
-@keyframes move {
   0% {
     top: 0rem; }
   40% {
@@ -192,7 +184,7 @@
     box-shadow: 0 1.875rem 1.875rem 0 rgba(0, 0, 0, 0.3);
     background: rgba(255, 255, 255, 0.92);
     display: block;
-    height: 10rem; }
+    height: 190px; }
     .navbar .dropdown-menu.show .dropdown-item {
       display: block;
       transition: all .25s; }
@@ -286,23 +278,66 @@ footer {
           margin-bottom: 0px; } }
 
 /*INDEX*/
-.logos-cervecerias {
-  flex-wrap: wrap; }
-  .logos-cervecerias .img-logos-blest {
-    height: 300px;
-    width: 250px; }
-  .logos-cervecerias .img-logos-manush {
-    height: 157.5px;
-    width: 300px; }
-  .logos-cervecerias .img-logos-patagonia {
-    height: 231.25px;
-    width: 231.25px; }
-  @media screen and (min-width: 481px) and (max-width: 1030px) {
-    .logos-cervecerias {
-      flex-direction: column; } }
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    .logos-cervecerias {
-      flex-direction: column; } }
+.contenedor-logos-cerve {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0 3.75rem 0; }
+
+.img-logos-blest {
+  height: 18.75rem;
+  width: 15.625rem; }
+
+.img-logos-manush {
+  height: 9.8438rem;
+  width: 18.75rem; }
+
+.img-logos-patagonia {
+  height: 14.4531rem;
+  width: 14.4531rem; }
+
+.img-logos-montaña {
+  height: 12.5rem;
+  width: 12.5rem; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-18.75rem * 5)); } }
+
+.slider {
+  height: 18.75rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 60rem; }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 15.625rem;
+    position: absolute;
+    width: 12.5rem;
+    z-index: 2; }
+    @media screen and (min-width: 0px) and (max-width: 480px) {
+      .slider::before, .slider::after {
+        width: 3.125rem; } }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  .slider::before {
+    left: 0;
+    top: 0; }
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    justify-content: space-evenly;
+    width: calc(18.75rem * 10); }
+    .slider .slide-track div > a > img:hover {
+      transform: scale(1.1, 1.1);
+      transition: 1.1s ease; }
+  .slider .slide {
+    width: 18.75rem; }
 
 .h1-section-index {
   text-transform: uppercase;
@@ -321,7 +356,7 @@ footer {
   overflow: hidden; }
   .imagenes-index img {
     max-width: 100%;
-    margin: 20px 0px; }
+    margin: 1.25rem 0; }
   @media screen and (min-width: 481px) and (max-width: 1030px) {
     .imagenes-index {
       flex-direction: column; } }
@@ -366,12 +401,13 @@ footer {
   /*query adaptado a celular*/ }
   .bares-flex div {
     display: flex;
-    justify-content: space-around;
     text-align: center;
     flex-direction: column; }
-    .bares-flex div img:hover {
-      transform: scale(1.2, 1.2);
-      transition: 1.5s ease; }
+    .bares-flex div img {
+      margin-bottom: 10px; }
+      .bares-flex div img:hover {
+        transform: scale(1.2, 1.2);
+        transition: 1.5s ease; }
   @media screen and (min-width: 481px) and (max-width: 1030px) {
     .bares-flex {
       flex-direction: column;
@@ -397,12 +433,13 @@ footer {
   /*query adaptado a celular*/ }
   .bares-flex-2 div {
     display: flex;
-    justify-content: space-around;
     text-align: center;
     flex-direction: column; }
-    .bares-flex-2 div img:hover {
-      transform: scale(1.2, 1.2);
-      transition: 1.5s ease; }
+    .bares-flex-2 div img {
+      margin-bottom: 10px; }
+      .bares-flex-2 div img:hover {
+        transform: scale(1.2, 1.2);
+        transition: 1.5s ease; }
   @media screen and (min-width: 481px) and (max-width: 1030px) {
     .bares-flex-2 {
       flex-direction: column;
@@ -508,6 +545,7 @@ ya que si pongo una clase propia no se modifica*/
   grid-template-rows: repeat(auto-fill, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "marcas contacto contacto" "marcas contacto contacto" "marcas contacto contacto";
+  margin-bottom: 50px;
   /*query adaptao a tablet*/
   /*query adaptado a celular*/ }
   .contenedorContacto #marcasLink {
@@ -517,7 +555,7 @@ ya que si pongo una clase propia no se modifica*/
       font-family: 'Staatliches', cursive;
       font-size: 30px;
       text-align: center;
-      margin-top: 2.5rem; }
+      margin: 2.5rem 0 0 0; }
     .contenedorContacto #marcasLink .logos-cervecerias-contacto {
       flex-direction: column; }
       .contenedorContacto #marcasLink .logos-cervecerias-contacto .img-contacto-blest {
@@ -532,8 +570,11 @@ ya que si pongo una clase propia no se modifica*/
       .contenedorContacto #marcasLink .logos-cervecerias-contacto .img-contacto-berlina {
         height: 6.4063rem;
         width: 6.4063rem; }
+      .contenedorContacto #marcasLink .logos-cervecerias-contacto .img-contacto-montaña {
+        height: 6.4063rem;
+        width: 6.4063rem; }
       .contenedorContacto #marcasLink .logos-cervecerias-contacto .tam {
-        margin: 40px 0px; }
+        margin: 30px 0px; }
     .contenedorContacto #marcasLink .logos-cervecerias-contacto > a > img:hover {
       transform: scale(2, 2);
       transition: 1.5s ease; }

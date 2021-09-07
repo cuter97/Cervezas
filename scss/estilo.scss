@@ -15,26 +15,95 @@
 @import 'footer';
 
 /*INDEX*/
-.logos-cervecerias{
-    @extend %propiedades-3;
-    flex-wrap: wrap;
-    
-    .img-logos-blest{
-        @include dimensiones(300px,250px);
-    }
-    .img-logos-manush{
-        @include dimensiones(157.5px,300px);
-    }
-    .img-logos-patagonia{
-        @include dimensiones(231.25px,231.25px);
-    }
-    @include size(tablet){
-        flex-direction: column;
-    }
-    @include size(phone){
-        flex-direction: column;
-    }
+
+// inicio contenedor mini carousel de logos
+.contenedor-logos-cerve{
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem 0 3.75rem 0;
 }
+
+
+// tamaño de los logos de las marcas
+.img-logos-blest{
+    @include dimensiones(18.75rem,15.625rem);
+}
+.img-logos-manush{
+    @include dimensiones(9.8438rem,18.75rem);
+}
+.img-logos-patagonia{
+    @include dimensiones(14.4531rem,14.4531rem);
+}
+.img-logos-montaña{
+  @include dimensiones(12.5rem,12.5rem);
+}
+
+// Animacion
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-18.75rem * 5))}
+}
+
+
+////Styling
+.slider {
+	height: 18.75rem;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	 width: 60rem;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 15.625rem;
+		position: absolute;
+		width: 12.5rem;
+		z-index: 2;
+
+        @include size(phone){
+            width: 3.125rem;
+        }
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+        justify-content: space-evenly;
+		width: calc(18.75rem * 10);
+
+        div > {
+            a > {
+                img{
+                    &:hover{
+                        transform: scale(1.1,1.1);
+                        transition: 1.1s ease;
+                    }
+                }
+            }
+        }
+	}
+	
+	 .slide {
+	    width: 18.75rem;
+        @extend %propiedades-3;
+	 }
+}
+// fin contenedor carousel logos
+
+
 .h1-section-index{
     text-transform: uppercase;
     font-family: 'Staatliches', cursive;
@@ -56,7 +125,7 @@
     
     img{
         max-width: 100%;
-        margin: 20px 0px;
+        margin: 1.25rem 0;
     }
 
     @include size(tablet){

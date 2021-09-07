@@ -7,8 +7,8 @@
     "marcas contacto contacto"
     "marcas contacto contacto"
     "marcas contacto contacto";
-    // background-color: nth($colores-contacto , 1 ) ;
-
+    margin-bottom: 50px;
+    
     #marcasLink{
         grid-area: marcas;
 
@@ -17,7 +17,7 @@
             font-family: 'Staatliches', cursive;
             font-size: 30px;
             text-align: center;
-            margin-top: 2.5rem;
+            margin: 2.5rem 0 0 0;
         }
         .logos-cervecerias-contacto{
             @extend %propiedades-3;
@@ -35,9 +35,12 @@
             .img-contacto-berlina{
                 @include dimensiones(6.4063rem,6.4063rem);
             }
+            .img-contacto-montaña{
+                @include dimensiones(6.4063rem,6.4063rem);
+            }
 
             .tam{
-                margin: 40px 0px;
+                margin: 30px 0px;
             }
         }
         .logos-cervecerias-contacto > {
